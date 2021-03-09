@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body, html {
+  font-family: 'Lato';
+  margin: 0;
+}
+
+nav {
+  background: #125358;
+  padding: 2em 3em;
+  width: 80%;
+  position: relative;
+  margin: 0% auto;
+  -webkit-box-shadow: 0 6px 9px #002D31;
+          box-shadow: 0 6px 9px #002D31;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20%)[5];
+      grid-template-columns: repeat(5, 20%);
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  justify-items: center;
+}
+
+nav ul li {
+  color: #FFAA00;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+nav ul li h2 {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

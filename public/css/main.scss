@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+$naranjaTexto: #FFAA00; 
+$verdeNavbar: #125358;
+
+// #2D2D2D
+// #3A3A3A
+// #949494
+// #002D31
+// #3E5C5F
+
+
+
+body, html {
+    font-family: 'Lato';
+    margin: 0;
+}
+
+
+nav {
+    background: $verdeNavbar;
+    padding: 2em 3em;
+    width: 80%;
+    position: relative;
+    margin: 0% auto;
+    box-shadow: 0 6px 9px #002D31;
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        align-items: baseline;
+        justify-items: center;
+        
+        li {
+            color: $naranjaTexto;
+            font-weight: 600;
+            margin: 0 10px;
+            
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+

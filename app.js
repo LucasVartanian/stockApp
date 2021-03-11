@@ -17,3 +17,7 @@ app.listen(3000, function(){
 app.get('/', function(req, res){
     res.render("home");
 });
+
+app.get('/depositos', function(req, res){
+    res.render("depositos");
+});

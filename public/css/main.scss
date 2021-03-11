@@ -2,13 +2,13 @@
 
 $naranjaTexto: #FFAA00;
 $verdeNavbar: #125358;
-$grisFooterMain: #3A3A3A
+$grisFooterMain: #3A3A3A;
+$verdeIconos: #3E5C5F;
+$verdeFooter: #002D31;
 
 // #2D2D2D
-// 
 // #949494
-// #002D31
-// #3E5C5F
+
 
 ;
 body, html{
@@ -45,6 +45,7 @@ nav {
                 letter-spacing: 1.5px;
             }
         }
+
     }
 }
 
@@ -87,22 +88,54 @@ section#propiedadesHome {
             font-size: 21px;
             line-height: 1.4;
             letter-spacing: 1px;
+            align-items: center;
+
+            img{
+                margin: 30px auto;
+                display: block;
+            }
 
             p {
                 font-weight: 600;
+                text-align: left;
             }
-
-
         }
     }
 }
 
 footer{
-    section{
+    position: relative;
+
+    div.container-fluid{
         background-color: $grisFooterMain;
-        padding: 2em;
-        position: relative;
-        width: 100%;
-        padding: 1em 2em;
+        margin-left: 0;
+        margin-right: 0;
+        
+        div.row{
+            padding: 2em 8em;
+
+            h3{
+                color: #d4d4d4 ;
+            }
+
+            p{
+                color: #949494;
+                font-size: 12px;
+            };
+
+        }
     }
+
+    div.copyright{
+        background-color: #002D31;
+        color: #949494;
+        height: fit-content;
+        text-align: center;
+        padding: 1em ;
+
+        p{
+            margin: 0px;
+        }
+    }
+
 }

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-body,
-html {
+body, html {
   font-family: 'Lato';
   margin: 0;
 }
@@ -86,15 +85,55 @@ section#propiedadesHome ul li {
   font-size: 21px;
   line-height: 1.4;
   letter-spacing: 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#propiedadesHome ul li img {
+  margin: 30px auto;
+  display: block;
 }
 
 section#propiedadesHome ul li p {
   font-weight: 600;
+  text-align: left;
 }
 
 footer {
-  position: fixed;
-  margin-bottom: 0%;
-  margin-top: 100%;
+  position: relative;
+}
+
+footer div.container-fluid {
+  background-color: #3A3A3A;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer div.container-fluid div.row {
+  padding: 2em 8em;
+}
+
+footer div.container-fluid div.row h3 {
+  color: #d4d4d4;
+}
+
+footer div.container-fluid div.row p {
+  color: #949494;
+  font-size: 12px;
+}
+
+footer div.copyright {
+  background-color: #002D31;
+  color: #949494;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 1em;
+}
+
+footer div.copyright p {
+  margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */

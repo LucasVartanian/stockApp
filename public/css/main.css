@@ -1,4 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.holder-tabla {
+  min-height: 1000px;
+}
+
+#tabla-stock {
+  border: 2px solid #000000;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+  width: 70%;
+}
+
+#tabla-stock tr {
+  border: 2px solid #000000;
+}
+
+#tabla-stock tr td {
+  border: 2px solid #000000;
+  padding: 5px 15px;
+  background-color: #eeeeee;
+}
+
+#tabla-stock tr td:first-child, #tabla-stock tr td:last-child {
+  width: 15%;
+}
+
+#tabla-stock tr th {
+  padding: 5px 15px;
+  background-color: #3af0f7;
+  border: 2px solid #000000;
+}
+
 body, html {
   font-family: 'Lato';
   margin: 0;

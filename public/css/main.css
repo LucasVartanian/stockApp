@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+body, html {
+  font-family: 'Lato';
+  margin: 0;
+}
+
+nav {
+  background: #125358;
+  padding: 1.5em 3em;
+  width: 80%;
+  position: relative;
+  margin: 0% auto;
+  -webkit-box-shadow: 0 6px 9px #002D31;
+          box-shadow: 0 6px 9px #002D31;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20%)[5];
+      grid-template-columns: repeat(5, 20%);
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  justify-items: center;
+}
+
+nav ul li {
+  color: #FFAA00;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+nav ul li h2 {
+  margin: 0;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+}
+
+main#introHome {
+  margin: 20px 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main#introHome img#imagenHome {
+  width: 70%;
+  height: auto;
+  margin: 2em auto;
+  display: block;
+}
+
+main#introHome div {
+  width: 100%;
+  text-align: justify;
+}
+
+main#introHome div p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+section#propiedadesHome {
+  margin: 10em 15%;
+}
+
+section#propiedadesHome ul {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30%)[3];
+      grid-template-columns: repeat(3, 30%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0%;
+}
+
+section#propiedadesHome ul li {
+  padding: 2em;
+  color: #FFAA00;
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#propiedadesHome ul li img {
+  margin: 30px auto;
+  display: block;
+}
+
+section#propiedadesHome ul li p {
+  font-weight: 600;
+  text-align: left;
+}
+
+footer {
+  position: relative;
+}
+
+footer div.container-fluid {
+  background-color: #3A3A3A;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer div.container-fluid div.row {
+  padding: 2em 8em;
+}
+
+footer div.container-fluid div.row h3 {
+  color: #d4d4d4;
+}
+
+footer div.container-fluid div.row p {
+  color: #949494;
+  font-size: 12px;
+}
+
+footer div.copyright {
+  background-color: #002D31;
+  color: #949494;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 1em;
+}
+
+footer div.copyright p {
+  margin: 0px;
+}
+/*# sourceMappingURL=main.css.map */

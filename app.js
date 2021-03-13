@@ -21,3 +21,7 @@ app.get('/', function(req, res){
 app.get('/depositos', function(req, res){
     res.render("depositos");
 });
+
+app.get('/ventas', function(req, res){
+    res.render("ventas");
+});

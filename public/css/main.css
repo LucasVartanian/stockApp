@@ -172,6 +172,27 @@ main#contenedorVentas div.nueva-venta h4::after {
   width: 35%;
 }
 
+main#contenedorVentas div.nueva-venta form {
+  margin: 1em auto;
+}
+
+main#contenedorVentas div.nueva-venta form div.form-row {
+  place-items: center;
+}
+
+main#contenedorVentas div.nueva-venta form .form-control {
+  border-radius: 21px;
+}
+
+main#contenedorVentas div.nueva-venta form a {
+  text-decoration: none;
+  color: #FFAA00;
+  font-weight: bold;
+  font-family: 'Lato';
+  font-size: 55px;
+  margin: 0 .5em;
+}
+
 footer {
   position: relative;
 }

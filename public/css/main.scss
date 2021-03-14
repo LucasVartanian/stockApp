@@ -140,6 +140,28 @@ main#contenedorVentas {
             left: 0;
             width: 35%;
         }
+
+        form {
+            margin: 1em auto;
+
+            div.form-row{
+                place-items: center;
+            }
+
+            .form-control{
+                border-radius: 21px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $naranjaTexto;
+                font-weight: bold;
+                font-family: 'Lato';
+                font-size: 55px;
+                margin: 0 .5em;
+
+            }
+        }
     }
 }
 

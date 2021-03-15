@@ -25,3 +25,7 @@ app.get('/depositos', function(req, res){
 app.get('/ventas', function(req, res){
     res.render("ventas");
 });
+
+app.get('/soporte', function(req, res){
+    res.render("soporte");
+});

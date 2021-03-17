@@ -1,0 +1,26 @@
+$naranjaTexto: #FFAA00;
+$verdeNavbar: #125358;
+$grisFooterMain: #3A3A3A;
+$verdeIconos: #3E5C5F;
+$verdeFooter: #002D31;
+
+nav{
+    background-color: $verdeNavbar;
+}
+
+#navbarNav{
+        padding-right: 50px;
+        ul li{
+            margin-right: 25px;
+            margin-left: 25px;
+            font-size: 20px;
+            a{
+                color: $naranjaTexto;
+            }
+        }
+}
+
+.nav-item .active{
+    color: #fff!important;
+}
+

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import 'componentes/table';
+@import 'componentes/navbar';
 
 $naranjaTexto: #FFAA00;
 $verdeNavbar: #125358;
@@ -19,7 +20,7 @@ html {
     margin: 0;
 }
 
-
+/*
 nav {
     background: $verdeNavbar;
     padding: 1.5em 3em;
@@ -58,6 +59,7 @@ nav {
 
     }
 }
+*/
 
 main#introHome {
     margin: 20px 20%;
@@ -193,7 +195,7 @@ main#contenedorVentas {
 footer {
     position: relative;
 
-    margin-top: min($numbers:30vh );
+    //margin-top: min($numbers:30vh );
 
     div.container-fluid {
         background-color: $grisFooterMain;

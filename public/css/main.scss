@@ -37,6 +37,12 @@ nav {
         align-items: baseline;
         justify-items: center;
 
+        .logo-nav{
+            width: 90%;
+            height: auto;
+        }
+
+
         li {
             color: $naranjaTexto;
             font-weight: 600;
@@ -45,7 +51,7 @@ nav {
             
             h2 {
                 margin: 0;
-                font-size: 21px;
+                font-size: 1.3em;
                 letter-spacing: 1.5px;
             }
         }
@@ -177,7 +183,6 @@ main#contenedorVentas {
         }
     }
 }
-
 
 
 

@@ -60,6 +60,11 @@ nav ul.nav-bar-items {
   justify-items: center;
 }
 
+nav ul.nav-bar-items .logo-nav {
+  width: 90%;
+  height: auto;
+}
+
 nav ul.nav-bar-items li {
   color: #FFAA00;
   font-weight: 600;
@@ -69,7 +74,7 @@ nav ul.nav-bar-items li {
 
 nav ul.nav-bar-items li h2 {
   margin: 0;
-  font-size: 21px;
+  font-size: 1.3em;
   letter-spacing: 1.5px;
 }
 

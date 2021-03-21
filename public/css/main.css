@@ -3,37 +3,6 @@
   min-height: 1000px;
 }
 
-<<<<<<< HEAD
-=======
-#tabla-stock {
-  border: 2px solid #000000;
-  margin: 20px auto;
-  border-collapse: collapse;
-  font-size: 18px;
-  width: 70%;
-}
-
-#tabla-stock tr {
-  border: 2px solid #000000;
-}
-
-#tabla-stock tr td {
-  border: 2px solid #000000;
-  padding: 5px 15px;
-  background-color: #eeeeee;
-}
-
-#tabla-stock tr td:first-child, #tabla-stock tr td:last-child {
-  width: 15%;
-}
-
-#tabla-stock tr th {
-  padding: 5px 15px;
-  background-color: #3af0f7;
-  border: 2px solid #000000;
-}
-
->>>>>>> 557e0b139541b9c66541cf7e90aa94d8d9d88f57
 nav {
   background-color: #125358;
   width: 80%;
@@ -106,49 +75,6 @@ html {
   margin: 0;
 }
 
-<<<<<<< HEAD
-=======
-/*
-nav {
-    background: $verdeNavbar;
-    padding: 1.5em 3em;
-    width: 80%;
-    position: relative;
-    margin: 0% auto;
-    box-shadow: 0 6px 9px #002D31;
-
-
-    ul.nav-bar-items {
-        list-style-type: none;
-        padding: 0;
-        display: grid;
-        grid-template-columns: repeat(5, 20%);
-        align-items: baseline;
-        justify-items: center;
-
-        .logo-nav{
-            width: 90%;
-            height: auto;
-        }
-
-
-        li {
-            color: $naranjaTexto;
-            font-weight: 600;
-            margin: 0 10px;
-            cursor: pointer;
-            
-            h2 {
-                margin: 0;
-                font-size: 1.3em;
-                letter-spacing: 1.5px;
-            }
-        }
-
-    }
-}
-*/
->>>>>>> 557e0b139541b9c66541cf7e90aa94d8d9d88f57
 main#introHome {
   margin: 20px 20%;
   -webkit-box-align: center;
@@ -280,46 +206,5 @@ main#contenedorVentas div.nueva-venta form a {
   font-family: 'Lato';
   font-size: 55px;
   margin: 0 .5em;
-<<<<<<< HEAD
 }
-=======
-}
-
-footer {
-  position: relative;
-}
-
-footer div.container-fluid {
-  background-color: #3A3A3A;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-footer div.container-fluid div.row {
-  padding: 2em 8em;
-}
-
-footer div.container-fluid div.row h3 {
-  color: #d4d4d4;
-}
-
-footer div.container-fluid div.row p {
-  color: #949494;
-  font-size: 12px;
-}
-
-footer div.copyright {
-  background-color: #002D31;
-  color: #949494;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  padding: 1em;
-}
-
-footer div.copyright p {
-  margin: 0px;
-}
->>>>>>> 557e0b139541b9c66541cf7e90aa94d8d9d88f57
 /*# sourceMappingURL=main.css.map */

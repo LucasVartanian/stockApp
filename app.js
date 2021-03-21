@@ -22,8 +22,8 @@ app.use(express.static('public'));
 app.use(morgan('dev')); //con el parámetro dev nos muestra por consola las solicitudes que hacemos al servidor
 app.use(myConnection(mysql, {
     host: 'localhost',
-    user:'',
-    password:'',
+    user:'stockapp',
+    password:'password',
     port: 3306,
     database: 'stockappdatabase' 
 }, 'single'));

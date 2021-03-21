@@ -6,14 +6,24 @@ $verdeFooter: #002D31;
 
 nav{
     background-color: $verdeNavbar;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+
+    img{
+        width: 80%;
+    }
+
 }
 
 #navbarNav{
         padding-right: 50px;
+        
         ul li{
             margin-right: 25px;
             margin-left: 25px;
             font-size: 20px;
+
             a{
                 color: $naranjaTexto;
             }
@@ -23,4 +33,6 @@ nav{
 .nav-item .active{
     color: #fff!important;
 }
+
+
 

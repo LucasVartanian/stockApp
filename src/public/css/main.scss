@@ -1,0 +1,24 @@
+$naranjaTexto: #FFAA00;
+$verdeNavbar: #125358;
+$grisFooterMain: #3A3A3A;
+$verdeIconos: #3E5C5F;
+$verdeFooter: #002D31;
+// #2D2D2D
+// #949494
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import 'componentes/table';
+@import 'componentes/navbar';
+@import 'componentes/footer';
+@import 'componentes/ventas';
+@import 'componentes/home';
+
+body,
+html {
+    font-family: 'Lato';
+}
+
+body{
+    max-width: 1600px;
+    margin: 0 auto!important;
+}

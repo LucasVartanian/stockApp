@@ -6,9 +6,10 @@ const morgan = require('morgan');
 const mysql = require('mysql');
 const myConnection = require('express-myconnection');
 
-const _ =  require('lodash');
 
-
+//importing routes
+const userRoutes = require('./routes/user');
+const { dirname } = require('path');
 
 //settings
 app.set('port', process.env.PORT || 3000);
@@ -18,7 +19,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 //middlewares: instrucciones que deben ejecutarse antes de las peticiones de los usuarios
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('public'));
 app.use(morgan('dev')); //con el parámetro dev nos muestra por consola las solicitudes que hacemos al servidor
 app.use(myConnection(mysql, {
     host: 'localhost',
@@ -30,25 +30,12 @@ app.use(myConnection(mysql, {
 
 
 //routes
+app.use('/', userRoutes); 
+
+//static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+//listening server
 app.listen(3000, function(){
     console.log("server ON");
-});
-
-app.get('/', function(req, res){
-    res.render("home",
-    {title: 'Home'});
-});
-
-app.get('/depositos', function(req, res){
-    res.render("depositos", {
-        title: "Depósitos"
-    });
-});
-
-app.get('/ventas', function(req, res){
-    res.render("ventas");
-});
-
-app.get('/soporte', function(req, res){
-    res.render("soporte");
 });

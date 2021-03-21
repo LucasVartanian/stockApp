@@ -1,0 +1,60 @@
+
+main#contenedorVentas {
+    align-items: center;
+    margin: 5em 15%;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 55px;
+        font-family: 'Montserrat';
+        font-weight: 800;
+        color: $verdeNavbar;
+    }
+
+    div.nueva-venta {
+        margin-top: 4em;
+
+        h4 {
+            color: $grisFooterMain;
+            font-size: 34px;
+            font-weight: 600;
+            font-family: 'Lato';
+            position: relative;
+        }
+
+        h4::after {
+            position: absolute;
+            content: '';
+            height: 4px;
+            bottom: -5px;
+            background: #707070;
+            margin: 0 auto;
+            left: 0;
+            width: 35%;
+        }
+
+        form {
+            margin: 1em auto;
+
+            div.form-row {
+                place-items: center;
+            }
+
+            .form-control {
+                border-radius: 21px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $naranjaTexto;
+                font-weight: bold;
+                font-family: 'Lato';
+                font-size: 55px;
+                margin: 0 .5em;
+
+            }
+        }
+    }
+}
+

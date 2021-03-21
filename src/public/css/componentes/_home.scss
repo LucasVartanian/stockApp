@@ -1,0 +1,66 @@
+
+main#introHome {
+    margin: 20px 20%;
+    align-items: center;
+
+    img#imagenHome {
+        width: 70%;
+        height: auto;
+        margin: 2em auto;
+        display: block;
+    }
+
+    div {
+        width: 100%;
+        text-align: justify;
+
+        p {
+            line-height: 2;
+            font-size: 15px;
+        }
+    }
+
+}
+
+section#propiedadesHome {
+    margin: 8em 15% 10em;
+
+    h2 {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        color: $grisFooterMain;
+
+        span {
+            color: $naranjaTexto;
+            font-weight: 700;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: center;
+        padding: 0%;
+
+        li {
+            padding: 2em;
+            color: $naranjaTexto;
+            font-size: 21px;
+            line-height: 1.4;
+            letter-spacing: 1px;
+            align-items: center;
+
+            img {
+                margin: 30px auto;
+                display: block;
+            }
+
+            p {
+                font-weight: 600;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+footer {
+    position: relative;
+
+    //margin-top: min($numbers:30vh );
+
+    div.container-fluid {
+        background-color: $grisFooterMain;
+        margin-left: 0;
+        margin-right: 0;
+
+        div.row {
+            padding: 2em 8em;
+
+            h3 {
+                color: #d4d4d4;
+            }
+
+            p {
+                color: #949494;
+                font-size: 12px;
+            }
+
+            ;
+
+        }
+    }
+
+    div.copyright {
+        background-color: #002D31;
+        color: #949494;
+        height: fit-content;
+        text-align: center;
+        padding: 1em;
+
+        p {
+            margin: 0px;
+        }
+    }
+
+}

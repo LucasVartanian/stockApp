@@ -28,7 +28,6 @@ app.use(myConnection(mysql, {
     database: 'stockappdatabase' 
 }, 'single'));
 
-
 //routes
 app.use('/', userRoutes); 
 

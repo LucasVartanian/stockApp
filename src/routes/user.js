@@ -9,11 +9,7 @@ router.get('/', function(req, res){
     {title: 'Home'});
 });
 
-router.get('/depositos', function(req, res){
-    res.render("depositos", {
-        title: "Depósitos"
-    });
-});
+router.get('/depositos', userController.list);
 
 router.get('/ventas', function(req, res){
     res.render("ventas", {

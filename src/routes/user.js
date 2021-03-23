@@ -10,6 +10,8 @@ router.get('/', function(req, res){
 });
 
 router.get('/depositos', userController.list);
+router.get('/delete/:id', userController.delete)
+router.get('/edit/:id', userController.edit)
 
 router.get('/ventas', function(req, res){
     res.render("ventas", {

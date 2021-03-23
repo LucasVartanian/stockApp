@@ -16,5 +16,51 @@ controller.list = (req, res) => {
     })
 }
 
+controller.delete = (req, res) => {
+    req.getConnection((err, conn) => {
+        const id = req.params.id
+        conn.query('DELETE FROM stock WHERE id = ?',[id], (err, stockData) =>{
+            if(err){
+                res.send("Error")
+            }else{
+                console.log(stockData);
+                res.redirect('/depositos')
+            }
+        })    
+    })
+}
+
+controller.edit = (req, res) => {
+    req.getConnection((err, conn) => {
+        const id = req.params.id
+        conn.query('SELECT FROM stock WHERE id = ?',[id], (err, stockProduct) =>{
+            if(err){
+                res.send("Error")
+            }else{
+                console.log(stockData);
+                res.redirect('/depositos')
+                //TODO: Interfaz editar producto
+            }
+        })    
+    })
+}
+
+controller.save = (req, res) => {
+    req.getConnection((err, conn) => {
+        const id = ""
+        const description = ""
+        const quantity = ""
+        const data = [id, description, quantity]
+        conn.query('INSERT INTO stock set ?',[data], (err, rows) =>{
+            if(err){
+                res.send("Error")
+            }else{
+                console.log(stockData);
+                res.redirect('/depositos')
+                //TODO: Interfaz editar producto
+            }
+        })    
+    })
+}
 
 module.exports = controller

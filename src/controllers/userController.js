@@ -4,7 +4,7 @@ controller.list = (req, res) => {
     req.getConnection((err, conn) => {
         conn.query('SELECT * FROM stock', (err, stockData) =>{
             if(err){
-                res.send("Error")
+                res.json(err)
             }else{
                 console.log(stockData);
                 res.render('depositos', {
@@ -21,7 +21,7 @@ controller.delete = (req, res) => {
         const id = req.params.id
         conn.query('DELETE FROM stock WHERE id = ?',[id], (err, stockData) =>{
             if(err){
-                res.send("Error")
+                res.json(err)
             }else{
                 console.log(stockData);
                 res.redirect('/depositos')
@@ -35,7 +35,7 @@ controller.edit = (req, res) => {
         const id = req.params.id
         conn.query('SELECT FROM stock WHERE id = ?',[id], (err, stockProduct) =>{
             if(err){
-                res.send("Error")
+                res.json(err)
             }else{
                 console.log(stockData);
                 res.redirect('/depositos')
@@ -53,7 +53,7 @@ controller.save = (req, res) => {
         const data = [id, description, quantity]
         conn.query('INSERT INTO stock set ?',[data], (err, rows) =>{
             if(err){
-                res.send("Error")
+                res.json(err)
             }else{
                 console.log(stockData);
                 res.redirect('/depositos')

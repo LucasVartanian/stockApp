@@ -47,17 +47,17 @@ controller.edit = (req, res) => {
 
 controller.save = (req, res) => {
     req.getConnection((err, conn) => {
-        const id = ""
-        const description = ""
-        const quantity = ""
+        console.log(req.body);
+        const id = parseInt(req.body.idProducto)
+        const description = req.body.descProducto
+        const quantity = parseInt(req.body.cantProducto)
         const data = [id, description, quantity]
-        conn.query('INSERT INTO stock set ?',[data], (err, rows) =>{
+        console.log(data);
+        conn.query( "INSERT INTO `stock` (`id`, `descr`, `quant`) VALUES (?); " ,[data], (err, rows) =>{
             if(err){
                 res.json(err)
             }else{
-                console.log(stockData);
                 res.redirect('/depositos')
-                //TODO: Interfaz editar producto
             }
         })    
     })

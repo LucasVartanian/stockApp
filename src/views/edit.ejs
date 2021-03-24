@@ -1,0 +1,33 @@
+<%- include ('partials/header') -%>
+
+<div class="w-100 px-3 py-4">
+    <div class="card">
+        <div class="card-body ">
+            <form action="/edit" method="POST">
+                <div class="form-group">
+                    <label for="codeProducto" class="font-weight-bold">Código del producto:
+                    </label>
+                    <input type="text" name="codeProducto"" class=" form-control"
+                        value="<%= data[0].code %> ">
+                </div>
+
+                <div class="form-group">
+                    <label for="descProducto" class="font-weight-bold">Descripción: </label>
+                    <input type="text" name="descProducto" class="form-control"
+                        value="<%= data[0].descr %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="cantProducto" class="font-weight-bold">Cantidad del
+                        Producto: </label>
+                    <input type="number" name="cantProducto" value="<%= data[0].quant %>"
+                        class="form-control">
+                </div>
+                <input type="submit" value="GUARDAR PRODUCTO" class="btn btn-primary">
+                <div class="btn btn-warning">DESHACER</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include ('partials/footer') -%> 

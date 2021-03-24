@@ -32,14 +32,15 @@ controller.delete = (req, res) => {
 
 controller.edit = (req, res) => {
     req.getConnection((err, conn) => {
-        const id = req.params.id
-        conn.query('SELECT FROM stock WHERE id = ?',[id], (err, stockProduct) =>{
+        const id = parseInt(req.params.id)
+        conn.query('SELECT * FROM stock WHERE id = ?', id, (err, stockProduct) =>{
             if(err){
                 res.json(err)
             }else{
-                console.log(stockData);
-                res.redirect('/depositos')
-                //TODO: Interfaz editar producto
+                res.render('edit', {
+                    data: stockProduct,
+                    title: 'Editar ID = ' + id
+                })
             }
         })    
     })

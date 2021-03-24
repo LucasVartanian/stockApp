@@ -7,8 +7,8 @@
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">#</th>
                     <th scope="col">ID</th>
+                    <th scope="col">Código</th>
                     <th scope="col">Descripcion</th>
                     <th scope="col">Cantidad</th>
                     <th scope="col">Acciones</th>
@@ -17,8 +17,8 @@
             <tbody class="border-right border-left border-bottom">
                 <% for( let i = 0; i < data.length; i++ ) { %>
                 <tr>
-                    <td class="align-middle" scope="row"><%= i %></td>
-                    <td class="align-middle"><%= data[i].id %></td>
+                    <td class="align-middle" scope="row"><%= data[i].id %></td>
+                    <td class="align-middle"><%= data[i].code %></td>
                     <td class="align-middle"><%= data[i].descr %></td>
                     <td class="align-middle"><%= data[i].quant %></td>
                     <td class="align-middle">
@@ -37,9 +37,9 @@
             <div class="card-body">
                 <form action="/add" method="POST">
                     <div class="form-group">
-                        <label for="idProducto" class="font-weight-bold">ID del producto:
+                        <label for="codeProducto" class="font-weight-bold">Código del producto:
                         </label>
-                        <input type="text" name="idProducto"" class=" form-control"
+                        <input type="text" name="codeProducto"" class=" form-control"
                             placeholder="069420">
                     </div>
 

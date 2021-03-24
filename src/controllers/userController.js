@@ -48,12 +48,12 @@ controller.edit = (req, res) => {
 controller.save = (req, res) => {
     req.getConnection((err, conn) => {
         console.log(req.body);
-        const id = parseInt(req.body.idProducto)
+        const code = req.body.codeProducto
         const description = req.body.descProducto
         const quantity = parseInt(req.body.cantProducto)
-        const data = [id, description, quantity]
+        const data = [code, description, quantity]
         console.log(data);
-        conn.query( "INSERT INTO `stock` (`id`, `descr`, `quant`) VALUES (?); " ,[data], (err, rows) =>{
+        conn.query( "INSERT INTO `stock` (`code`, `descr`, `quant`) VALUES (?); " ,[data], (err, rows) =>{
             if(err){
                 res.json(err)
             }else{

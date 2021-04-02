@@ -12,9 +12,9 @@
                     <input type="date" name="date" class="form-control" max="<%=maxDate%>" value="<%=maxDate%>">
                 </div>
                 <div class="col-4">
-                    <select name="prodCode" class="form-select" id="">
+                    <select id="prodCode" name="prodCode" class="form-select" >
                         <% for( let i= 0; i < data.length; i++ ) { %>
-                            <option value=""><%= data[i].descr %></option> 
+                            <option  value="<%= data[i].descr %>"><%= data[i].descr %></option> 
                         <% } %>
                     </select>
                 </div>

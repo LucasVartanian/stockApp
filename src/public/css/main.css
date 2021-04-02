@@ -119,15 +119,11 @@ main#contenedorVentas div.nueva-venta form .form-control {
   border-radius: 21px;
 }
 
-<<<<<<< HEAD
 main#contenedorVentas div.nueva-venta form .form-select {
   border-radius: 21px;
 }
 
-main#contenedorVentas div.nueva-venta form a {
-=======
-main#contenedorVentas div.nueva-venta form input#sumaVenta {
->>>>>>> 3529c942512a8e3eb1633e438063f18aea01d8bc
+main#contenedorVentas div.nueva-venta form button#addSale {
   text-decoration: none;
   color: #FFAA00;
   font-weight: bold;

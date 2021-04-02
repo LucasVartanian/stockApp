@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-const ventasController = {}
+const ventasController = {};
 
 ventasController.main = (req,res) => {
     req.getConnection((err, conn) => {
@@ -16,8 +15,6 @@ ventasController.main = (req,res) => {
 }
 
 module.exports = ventasController
-=======
-const ventasController = {};
 
 ventasController.save = (req, res) => {
     req.getConnection((err, conn) => {
@@ -49,4 +46,3 @@ ventasController.save = (req, res) => {
 
 
 module.exports = ventasController;
->>>>>>> 3529c942512a8e3eb1633e438063f18aea01d8bc

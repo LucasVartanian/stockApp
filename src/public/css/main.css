@@ -123,7 +123,7 @@ main#contenedorVentas div.nueva-venta form .form-select {
   border-radius: 21px;
 }
 
-main#contenedorVentas div.nueva-venta form button#addSale {
+main#contenedorVentas div.nueva-venta form a {
   text-decoration: none;
   color: #FFAA00;
   font-weight: bold;

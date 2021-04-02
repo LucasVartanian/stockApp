@@ -1,3 +1,5 @@
+const { update } = require("lodash")
+
 const controller = {}
 
 controller.list = (req, res) => {
@@ -42,9 +44,26 @@ controller.edit = (req, res) => {
                     title: 'Editar ID = ' + id
                 })
             }
-        })    
+        })
     })
 }
+
+controller.update = (req, res) => {
+    const id = parseInt(req.params.id);
+    const newProduct = req.body;
+    const updateSQL = {
+        code: newProduct.codeProducto,
+        descr: newProduct.descProducto,
+        quant: newProduct.cantProducto
+    }
+    console.log(updateSQL);
+    req.getConnection((err, conn) => {
+        conn.query('UPDATE stock set ? WHERE id = ?', [updateSQL, id], (err, rows)=>{
+            res.redirect('/depositos');
+        });
+    });
+};
+
 
 controller.save = (req, res) => {
     req.getConnection((err, conn) => {

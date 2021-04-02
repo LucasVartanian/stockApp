@@ -3,12 +3,12 @@
 <div class="w-100 px-3 py-4">
     <div class="card">
         <div class="card-body ">
-            <form action="/edit" method="POST">
+            <form action="/edit/<%= data[0].id %> " method="POST">
                 <div class="form-group">
                     <label for="codeProducto" class="font-weight-bold">Código del producto:
                     </label>
-                    <input type="text" name="codeProducto"" class=" form-control"
-                        value="<%= data[0].code %> ">
+                    <input type="text" name="codeProducto" class=" form-control"
+                        value="<%= data[0].code %>">
                 </div>
 
                 <div class="form-group">

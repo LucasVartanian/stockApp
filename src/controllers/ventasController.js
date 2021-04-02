@@ -1,5 +1,3 @@
-const ventasController = {};
-
 ventasController.save = (req, res) => {
     req.getConnection((err, conn) => {
             const fecha = (req.body.fecha);

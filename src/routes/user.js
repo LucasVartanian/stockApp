@@ -12,7 +12,6 @@ router.get('/', function(req, res){
 router.get('/depositos', userController.list);
 router.get('/delete/:id', userController.delete)
 router.get('/edit/:id', userController.edit)
-
 router.post('/add', userController.save)
 
 router.get('/ventas', function(req, res){

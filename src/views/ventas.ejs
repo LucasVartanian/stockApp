@@ -12,9 +12,9 @@
                     <input type="date" name="date" class="form-control" max="<%=maxDate%>" value="<%=maxDate%>">
                 </div>
                 <div class="col-4">
-                    <select name="prodCode" class="form-select" id="">
+                    <select id="prodCode" name="prodCode" class="form-select" >
                         <% for( let i= 0; i < data.length; i++ ) { %>
-                            <option value=""><%= data[i].descr %></option> 
+                            <option  value="<%= data[i].descr %>"><%= data[i].descr %></option> 
                         <% } %>
                     </select>
                 </div>
@@ -25,7 +25,7 @@
                     <input type="number" name="prodPrice" class="form-control" placeholder="MONTO">
                 </div>
                 <div class="col">
-                    <button class="btn btn-primary" onclick="addSale()">➕</button>
+                    <button class="addSale" onclick="addSale()">+</button>
                 </div>
                 <input type="submit" value="AGREGAR TODO" class="btn btn-primary my-2">
             </div>

@@ -6,8 +6,9 @@ ventasController.main = (req,res) => {
             if (err){
                 res.json(err)
             }else{
-                console.log(data)
-                res.render('ventas', {title: 'Ventas', data: data})
+                var hoy = new Date()
+                const maxDate = hoy.toISOString().slice(0,10);
+                res.render('ventas', {title: 'Ventas', data: data, maxDate: maxDate})
             }    
         })
     })

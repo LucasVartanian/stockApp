@@ -9,30 +9,31 @@
         <form action="">
             <div class="form-row">
                 <div class="col-2">
-                    <input type="date" class="form-control" placeholder="FECHA">
+                    <input type="date" name="date" class="form-control" max="<%=maxDate%>" value="<%=maxDate%>">
                 </div>
                 <div class="col-4">
-                    <select name="product" class="form-control" id="">
+                    <select name="prodCode" class="form-select" id="">
                         <% for( let i= 0; i < data.length; i++ ) { %>
                             <option value=""><%= data[i].descr %></option> 
                         <% } %>
                     </select>
                 </div>
                 <div class="col-2">
-                    <input type="number"class="form-control" placeholder="CANTIDAD">
+                    <input type="number" name="quant" class="form-control" placeholder="CANTIDAD">
                 </div>
                 <div class="col-2">
-                    <input type="number" class="form-control" placeholder="MONTO">
+                    <input type="number" name="prodPrice" class="form-control" placeholder="MONTO">
                 </div>
                 <div class="col">
-                    <a href="" name="añadirVenta" id="sumaVenta">+</a>
+                    <button class="btn btn-primary" onclick="addSale()">➕</button>
                 </div>
+                <input type="submit" value="AGREGAR TODO" class="btn btn-primary my-2">
             </div>
         </form>
     </div>
 
 </main>
-
+<script src="/js/userSales.js"></script>
 
 
 <%- include ("partials/footer") %> 

@@ -45,13 +45,15 @@ main#contenedorVentas {
                 border-radius: 21px;
             }
 
-            a {
+            input#sumaVenta {
                 text-decoration: none;
                 color: $naranjaTexto;
                 font-weight: bold;
                 font-family: 'Lato';
                 font-size: 55px;
                 margin: 0 .5em;
+                border: 0;
+                background: transparent;
 
             }
         }

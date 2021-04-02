@@ -54,7 +54,7 @@
                         <label for="cantProducto" class="font-weight-bold">Cantidad del
                             Producto: </label>
                         <input type="number" name="cantProducto" placeholder="10"
-                            class="form-control">
+                            class="form-control" min="1">
                     </div>
                     <input type="submit" value="AGREGAR PRODUCTO" class="btn btn-primary">
                 </form>
@@ -64,5 +64,5 @@
 </div>
 
 
-
+<script src="/js/validNewItem.js"></script>
 <%- include ("partials/footer") -%>

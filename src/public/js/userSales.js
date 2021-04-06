@@ -6,7 +6,7 @@ const lista = document.querySelector('.lista')
 var sales = []
 
 
-function resetValues(){
+function resetValues() {
     prodPrice.value = "0"
     quant.value = "0"
 }
@@ -37,11 +37,11 @@ function addSale() {
             prodPrice: prodPrice.value,
             quant: quant.value
         }
-        sales.push(venta)
 
-        lista.innerHTML += Object.values(venta) +  "<br>"
+        sales.push(venta);
+        lista.innerHTML += Object.values(venta) + "<br>"
         console.log(sales);
 
         resetValues();
-        }
     }
+}

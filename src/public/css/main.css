@@ -134,6 +134,11 @@ main#contenedorVentas div.nueva-venta form div.addSale {
   background: transparent;
 }
 
+main#contenedorVentas div.lista {
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
 main#introHome {
   margin: 20px 20%;
   -webkit-box-align: center;
@@ -213,7 +218,7 @@ html {
 }
 
 body {
-  max-width: 1600px;
+  max-width: 1920px;
   margin: 0 auto !important;
 }
 /*# sourceMappingURL=main.css.map */

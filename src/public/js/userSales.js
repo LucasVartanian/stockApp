@@ -37,11 +37,12 @@ function addSale() {
             prodPrice: prodPrice.value,
             quant: quant.value
         }
+        const arrayVenta = Object.values(venta).join(', ');
 
         sales.push(venta);
-        lista.innerHTML += Object.values(venta) + "<br>"
         console.log(sales);
+        lista.innerHTML += arrayVenta + "<br>"
 
         resetValues();
-    }
+    }   
 }

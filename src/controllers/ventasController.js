@@ -24,7 +24,6 @@ ventasController.save = (req, res) => {
 
         const nuevaVenta = req.body;
         const dataVentas = [nuevaVenta];
-        console.log(req.hola);
 
         dataVentas.map((prod) => {
             console.log(prod);

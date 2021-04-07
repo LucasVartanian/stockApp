@@ -137,6 +137,7 @@ main#contenedorVentas div.nueva-venta form div.addSale {
 main#contenedorVentas div.lista {
   font-family: 'Lato';
   font-weight: 400;
+  word-spacing: 6px;
 }
 
 main#introHome {

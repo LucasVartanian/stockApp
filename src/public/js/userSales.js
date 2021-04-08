@@ -3,6 +3,7 @@ const prodCode = document.querySelector("select[name='prodCode']")
 const prodPrice = document.querySelector("input[name='prodPrice']")
 const quant = document.querySelector("input[name='quant']")
 const lista = document.querySelector('.lista')
+const bodyTabla = document.querySelector('.bodyTabla')
 var sales = []
 
 
@@ -32,7 +33,7 @@ function validAll() {
 function addSale() {
     if (validAll()) {
         const venta = {
-            date: date.value,
+            date: date.value.split("-").reverse().join("-"),
             prodCode: prodCode.value,
             prodPrice: prodPrice.value,
             quant: quant.value
@@ -41,14 +42,18 @@ function addSale() {
         sales.push(venta);
         console.log(sales);
 
-        lista.innerHTML += 
-        "<div class='col-3'>" + venta.date + "</div>" +
-        "<div class='col-3'>" + venta.prodCode + "</div>" +
-        "<div class='col-3'>" + venta.prodPrice + "</div>" +
-        "<div class='col-3'>" + venta.quant + "</div>" 
+        bodyTabla.innerHTML +=
+        "<tr>" +
+        "<td class='align-middle'>" + venta.date + "</td>" +
+        "<td class='align-middle'>" + venta.prodCode + "</td>" +
+        "<td class='align-middle'>" + venta.quant + "</td>" +
+        "<td class='align-middle'>" + venta.prodPrice + "</td" +
+        "</tr>"
+        resetValues();
+    }
+};
 
-
-{/* <table class="table table-striped">
+/* <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
@@ -73,9 +78,4 @@ function addSale() {
                 <% } %>
 
             </tbody>
-        </table> */}
-
-
-        resetValues();
-    }
-};
+        </table> */

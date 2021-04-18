@@ -64,30 +64,3 @@ function addSale() {
         console.log(formAction);
     }
 };
-
-/* <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Código</th>
-                    <th scope="col">Descripcion</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Acciones</th>
-                </tr>
-            </thead>
-            <tbody class="border-right border-left border-bottom">
-                <% for( let i = 0; i < data.length; i++ ) { %>
-                <tr>
-                    <td class="align-middle" scope="row"><%= data[i].id %></td>
-                    <td class="align-middle"><%= data[i].code %></td>
-                    <td class="align-middle"><%= data[i].descr %></td>
-                    <td class="align-middle"><%= data[i].quant %></td>
-                    <td class="align-middle">
-                        <a href="/edit/<%= data[i].id %>"><button class="btn btn-primary">EDITAR</button></a>
-                        <a href="/delete/<%= data[i].id %>"><button class="btn btn-danger"">ELIMINAR</button></a>
-                    </td>
-                </tr>
-                <% } %>
-
-            </tbody>
-        </table> */

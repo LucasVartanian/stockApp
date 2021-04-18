@@ -1,10 +1,26 @@
+$desktop: 1200px;
+$mid-size: 800px;
+
+@mixin desktop {   
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+};
+
+@mixin mid-size {   
+    @media (min-width: #{$mid-size}) {
+        @content;
+    }
+};
+
 
 main#introHome {
     margin: 20px 20%;
     align-items: center;
 
     img#imagenHome {
-        width: 70%;
+        width: 100%;
+        max-width: 650px;
         height: auto;
         margin: 2em auto;
         display: block;
@@ -12,7 +28,7 @@ main#introHome {
 
     div {
         width: 100%;
-        text-align: justify;
+        text-align: left;
 
         p {
             line-height: 2;
@@ -20,10 +36,16 @@ main#introHome {
         }
     }
 
+    @include desktop(){
+        img#imagenHome{
+            width: 70%;
+        }
+    }
+
 }
 
 section#propiedadesHome {
-    margin: 8em 15% 10em;
+    margin: 8em 7% 6em;
 
     h2 {
         text-align: center;
@@ -40,14 +62,15 @@ section#propiedadesHome {
     ul {
         list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(3, 30%);
         justify-content: center;
         padding: 0%;
+        margin-bottom: 0%;
 
         li {
             padding: 2em;
             color: $naranjaTexto;
-            font-size: 21px;
+            font-size: 18px;
             line-height: 1.4;
             letter-spacing: 1px;
             align-items: center;
@@ -62,5 +85,14 @@ section#propiedadesHome {
                 text-align: left;
             }
         }
+
     }
+
+    @include desktop(){
+        ul{
+            grid-template-columns: repeat(3, 30%);
+            justify-content: center;
+        }
+    }
+
 }

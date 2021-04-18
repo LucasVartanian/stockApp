@@ -10,18 +10,19 @@ nav{
     margin: 0 auto;
 
     img{
-        width: 80%;
+        width: 100%;
     }
 
 }
 
-// .navbar{
-//     padding: 8 0;
-// }
 
-// .container-fluid{
-//     padding: 0 384px;
-// }
+.navbar-brand{
+    width: 140px;
+}
+
+.navbar-toggler{
+    margin: 0;
+}
 
 #navbarNav{
         padding-right: 50px;

@@ -1,3 +1,5 @@
+
+
 footer {
     position: relative;
 
@@ -9,7 +11,7 @@ footer {
         margin-right: 0;
 
         div.row {
-            padding: 2em 8em;
+            padding: 2em 2em;
 
             h3 {
                 color: #d4d4d4;
@@ -20,9 +22,22 @@ footer {
                 font-size: 12px;
             }
 
-            ;
-
+            .col-sm-12{
+                margin: 1em 0;
+            }
         }
+
+        #footer-item{
+            padding: 1em;
+        }
+
+        img{
+            width: 70%;
+            max-width: 200px;
+            margin:0 auto;
+            display: block;
+        }
+
     }
 
     div.copyright {

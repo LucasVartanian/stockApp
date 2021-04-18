@@ -19,12 +19,12 @@ router.post('/add', userController.save)
 
 
 //Ventas
-router.get('/ventas', ventasController.main);
-router.post('/add', userController.save)
+router.get('/ventas/', ventasController.main);
+router.post('/add/', userController.save)
 
 
 //Otros
-router.post('/ventas', ventasController.save);
+router.post('/ventas/:sales', ventasController.save);
 
 router.get('/soporte', function(req, res){
     res.render("soporte", {

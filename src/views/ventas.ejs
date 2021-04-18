@@ -6,12 +6,14 @@
     <div class="nueva-venta">
         <h4>Añadir nueva venta</h4>
 
-        <form action="/ventas" method="POST">
+        <form action="/ventas" method="POST" id="formAddVenta">
             <div class="form-row">
                 <div class="col-2">
+                    <label for="date">Fecha</label>
                     <input type="date" name="date" class="form-control" max="<%=maxDate%>" value="<%=maxDate%>">
                 </div>
                 <div class="col-4">
+                    <label for="prodCode">Producto</label>
                     <select id="prodCode" name="prodCode" class="form-select" >
                         <% for( let i= 0; i < data.length; i++ ) { %>
                             <option  value="<%= data[i].descr %>"><%= data[i].descr %></option> 
@@ -19,9 +21,11 @@
                     </select>
                 </div>
                 <div class="col-2">
-                    <input type="number" name="quant" min="1" class="form-control" placeholder="CANTIDAD">
+                    <label for="quant">Cantidad de productos</label>
+                    <input type="number" name="quant" class="form-control" placeholder="CANTIDAD">
                 </div>
                 <div class="col-2">
+                    <label for="quant">Monto total</label>
                     <input type="number" name="prodPrice" class="form-control" placeholder="MONTO">
                 </div>
                 <div class="col">

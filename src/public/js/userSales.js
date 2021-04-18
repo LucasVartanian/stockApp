@@ -4,6 +4,7 @@ const prodPrice = document.querySelector("input[name='prodPrice']")
 const quant = document.querySelector("input[name='quant']")
 const lista = document.querySelector('.lista')
 const bodyTabla = document.querySelector('.bodyTabla')
+const form = document.querySelector('#formAddVenta')
 var sales = []
 
 
@@ -27,6 +28,13 @@ function validAll() {
         prodPrice.setCustomValidity('')
     }
 
+    if(quant.value == 0){
+        quant.setCustomValidity('La cantidad no puede ser 0')
+        return false
+    } else{
+        quant.setCustomValidity('')
+    }
+
     return true
 };
 
@@ -40,7 +48,6 @@ function addSale() {
         }
         const arrayVenta = Object.values(venta).join(', ');
         sales.push(venta);
-        console.log(sales);
 
         bodyTabla.innerHTML +=
         "<tr>" +
@@ -50,6 +57,11 @@ function addSale() {
         "<td class='align-middle'>" + venta.prodPrice + "</td" +
         "</tr>"
         resetValues();
+
+        var ventasArr = JSON.stringify(sales)
+        form.action = "/ventas/" + ventasArr
+
+        console.log(formAction);
     }
 };
 

@@ -130,6 +130,8 @@ main#contenedorVentas div.nueva-venta form div.addSale {
   font-family: 'Lato';
   font-size: 55px;
   margin: 0 .5em;
+  -webkit-transform: translateY(13px);
+          transform: translateY(13px);
   border: 0;
   background: transparent;
 }

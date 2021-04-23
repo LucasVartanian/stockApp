@@ -1,23 +1,40 @@
+$desktop: 990px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+;
+
+@mixin mid-size {
+    @media (min-width: #{$mid-size}) {
+        @content;
+    }
+}
+
+;
 
 main#contenedorVentas {
-    align-items: center;
-    margin: 5em 15%;
+    align-items: left;
+    margin: 2em 10%;
 
     h2 {
-        text-align: center;
+        text-align: left;
         text-transform: uppercase;
-        font-size: 55px;
+        font-size: 30px;
         font-family: 'Montserrat';
         font-weight: 800;
         color: $verdeNavbar;
     }
 
     div.nueva-venta {
-        margin-top: 4em;
+        margin-top: 2em;
 
         h4 {
             color: $grisFooterMain;
-            font-size: 34px;
+            font-size: 18px;
             font-weight: 600;
             font-family: 'Lato';
             position: relative;
@@ -31,15 +48,45 @@ main#contenedorVentas {
             background: #707070;
             margin: 0 auto;
             left: 0;
-            width: 35%;
+            width: 75%;
         }
 
-        form {
-            margin: 1em auto;
+    }
 
-            div.form-row {
-                place-items: center;
-            }
+    @include desktop(){
+        main{
+            align-items: center;
+            margin: 4em 15%;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 50px !important;
+        }
+
+        h4{
+            font-size: 30px !important;
+        }
+        h4::after{
+            width: 35% !important;
+        }
+    }
+
+
+
+}
+
+.form-container {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 80% 20%;
+
+    .selectors {
+        margin: 0;
+
+        .selec {
+            margin-bottom: 2em;
 
             .form-control {
                 border-radius: 21px;
@@ -48,26 +95,75 @@ main#contenedorVentas {
             .form-select {
                 border-radius: 21px;
             }
-
-            div.addSale {
-                text-decoration: none;
-                color: $naranjaTexto;
-                font-weight: bold;
-                font-family: 'Lato';
-                font-size: 55px;
-                margin: 0 .5em;
-                border: 0;
-                background: transparent;
-
-            }
         }
     }
 
-    div.lista{
-        font-family: 'Lato';
-        font-weight: 400;
-        word-spacing: 6px;
+    .plus-btn {
+        margin: auto 0;
     }
+
+    div.addSale {
+        text-decoration: none;
+        color: $naranjaTexto;
+        font-weight: bold;
+        font-family: 'Lato';
+        font-size: 55px;
+        text-align: center;
+        border: 0;
+        background: transparent;
+
+    }
+
+    .btn {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    @include desktop() {
+        grid-template-rows: 1fr 1fr;
+
+
+        .selectors {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+
+        }
+
+        .btn {
+            grid-column-start: 1;
+            grid-column-end: unset;
+            width: 20%;
+            height: 50%;
+        }
+
+        .selec {
+            margin: auto 1em auto 1em !important;
+        }
+
+        .plus-btn {
+            margin: auto;
+            margin-left: 6em;
+            text-align: start;
+        }
+    }
+
+
 
 }
 
+div.lista {
+    font-family: 'Lato';
+    font-weight: 400;
+    word-spacing: 6px;
+
+    tbody {
+        font-size: 0.8em;
+    }
+
+    @include desktop(){
+        tbody{
+            font-size: 1em;
+        }
+    }
+
+}

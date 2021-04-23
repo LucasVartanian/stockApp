@@ -1,4 +1,4 @@
-<%- include ("partials/header") %> 
+<%- include ("partials/header") %>
 
 <main id="contenedorVentas">
     <h2>ventas</h2>
@@ -7,24 +7,26 @@
         <h4>Añadir nueva venta</h4>
 
         <form action="/ventas" method="POST">
-            <div class="form-row">
-                <div class="col-2">
-                    <input type="date" name="date" class="form-control" max="<%=maxDate%>" value="<%=maxDate%>">
+            <div class="form-container">
+                <div class="selectors">
+                    <div class="selec date-selector">
+                        <input type="date" name="date" class="form-control" max="<%=maxDate%>" value="<%=maxDate%>">
+                    </div>
+                    <div class="selec prod-selector">
+                        <select id="prodCode" name="prodCode" class="form-select">
+                            <% for( let i= 0; i < data.length; i++ ) { %>
+                            <option value="<%= data[i].descr %>"><%= data[i].descr %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                    <div class="selec quant-selector">
+                        <input type="number" name="quant" min="1" class="form-control" placeholder="CANTIDAD">
+                    </div>
+                    <div class="selec price-selector">
+                        <input type="number" name="prodPrice" class="form-control" placeholder="MONTO">
+                    </div>
                 </div>
-                <div class="col-4">
-                    <select id="prodCode" name="prodCode" class="form-select" >
-                        <% for( let i= 0; i < data.length; i++ ) { %>
-                            <option  value="<%= data[i].descr %>"><%= data[i].descr %></option> 
-                        <% } %>
-                    </select>
-                </div>
-                <div class="col-2">
-                    <input type="number" name="quant" min="1" class="form-control" placeholder="CANTIDAD">
-                </div>
-                <div class="col-2">
-                    <input type="number" name="prodPrice" class="form-control" placeholder="MONTO">
-                </div>
-                <div class="col">
+                <div class="plus-btn">
                     <div class="addSale" onclick="addSale()" style="cursor:pointer;">+</div>
                 </div>
                 <input type="submit" value="AGREGAR TODO" class="btn btn-primary my-2">
@@ -41,7 +43,7 @@
                     </tr>
                 </thead>
                 <tbody class="bodyTabla border-right border-left border-bottom">
-                
+
                 </tbody>
             </table>
 
@@ -52,6 +54,4 @@
 <script src="/js/userSales.js"></script>
 
 
-<%- include ("partials/footer") %> 
-
-
+<%- include ("partials/footer") %>

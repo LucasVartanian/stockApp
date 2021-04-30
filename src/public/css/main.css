@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 .holder-tabla {
-  min-height: 1000px;
+  min-height: 700px;
 }
 
 nav {
@@ -41,6 +41,7 @@ nav img {
 
 footer {
   position: relative;
+  margin-top: 10vh;
 }
 
 footer div.container-fluid {
